@@ -38,3 +38,5 @@ function permutacionLexicografica(numeros) {
 
 const numeros = [1, 2, 3, 4];
 permutacionLexicografica(numeros);
+
+//Trabajo hecho por Diego Alejandro Gonzalez Villasmil para el semillero de quipux
