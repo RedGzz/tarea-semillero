@@ -6,27 +6,27 @@ function permutacionLexicografica(numeros) {
         console.log(numeros.join(' '));
         
 
-        let i = n - 2;
-        while (i >= 0 && numeros[i] >= numeros[i + 1]) {
-            i--;
+        let a = n - 2;
+        while (a >= 0 && numeros[a] >= numeros[a + 1]) {
+            a--;
         }
         
 
-        if (i === -1) {
+        if (a === -1) {
             break;
         }
         
 
-        let j = n - 1;
-        while (numeros[j] <= numeros[i]) {
-            j--;
+        let b = n - 1;
+        while (numeros[b] <= numeros[a]) {
+            b--;
         }
         
 
-        [numeros[i], numeros[j]] = [numeros[j], numeros[i]];
+        [numeros[a], numeros[b]] = [numeros[b], numeros[a]];
         
 
-        let left = i + 1;
+        let left = a + 1;
         let right = n - 1;
         while (left < right) {
             [numeros[left], numeros[right]] = [numeros[right], numeros[left]];
